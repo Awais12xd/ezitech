@@ -1,0 +1,45 @@
+s fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .fade-in {
+    display: inline-block;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  h1.topu {
+    transition: filter 0.1s ease-out; /* Smooth transition for the blur effect */
+  }
+  h1.topu span{
+    transition: filter 0.1s ease-out; /* Smooth transition for the blur effect */
+  }
+  h1.topu{
+    line-height: 70px;
+
+  }
+  
+
+  #searchBar{
+    background: rgba(0, 0, 0, 0.804); /* Slightly transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    
+  }
+/* 
+  #searchBar{
+    filter: blur(300px);
+    background-color: transparent;
+  } */
+  
+  @media (max-width:700px){
+    h1.topu{
+        line-height: 40px;
+      }
+  }
